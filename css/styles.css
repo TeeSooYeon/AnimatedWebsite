@@ -1,0 +1,1179 @@
+html{
+  overflow-x: hidden;
+}
+body{
+  height:auto;
+  width: auto;
+    margin:0;
+    padding:0;
+    background:linear-gradient(180deg,rgb(1, 39, 46)0%,rgb(27, 89, 139)35%, rgb(140, 192, 226)100%);
+    background-repeat: no-repeat;
+}
+.alps_logo{
+    left: 50%;
+}
+.mountain-1{
+    left: 39%;
+    top: 39%;
+    position:absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(248, 251, 252);
+    transform: scaleY(0.8);
+  }
+  .mountain-2{
+    left: 37%;
+    top: 44%;
+    position:absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(248, 251, 252);
+    transform: scaleY(0.6);
+  }
+  .snow {
+    position: absolute;
+      display: block;
+    width: 179px;
+    top:24%;
+  left:40.5%;
+  }
+  .flake1 {
+    position: relative;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  .flake2 {
+    position: relative;
+    left:5px;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.7s;
+    animation-delay:0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  .flake3 {
+    position: relative;
+    left:-10px;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.3s;
+    animation-delay:0.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  .flake4 {
+    position: relative;
+    left:25px;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.7s;
+    animation-delay:0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  .flake5 {
+    position: relative;
+    left:-25px;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.4s;
+    animation-delay:1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+    
+  }
+  .flake6 {
+    position: relative;
+    left:9px;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.7s;
+    animation-delay:1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  .flake7 {
+    position: relative;
+    left:-15px;
+    width:2px;
+    height:2px;
+    background: white;
+      opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.2s;
+    animation-delay:1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  .flake8 {
+    position: relative;
+    left:35px;
+    width:2px;
+    height:2px;
+    background: white;
+    opacity: 0;
+    transform-origin:0px 0px;
+    animation-name: Snow;
+  animation-duration:2.7s;
+    animation-delay:1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  }
+  @keyframes Snow {
+    0% {
+    transform:translateY(0px);
+      opacity:0;
+    }
+    50% {
+      transform:translateY(25px);
+      opacity: 1;
+    }
+      100% {
+      transform:translateY(45px);
+      opacity: 0.3;
+    }
+  }
+  /*----------------------------------------------------Header to body------------------------------------------------------*/
+  /* The Alps by Hans Toquero.Copyright © 2020 */
+.header {
+	font-family: 'Carter One', cursive;
+    font-size: 6rem;
+    margin-bottom: 0;
+	font-weight:  100;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #18c0f3;
+	background-image: -webkit-linear-gradient(92deg, #fdfdfd, #0045db);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  -webkit-animation: hue 5s infinite linear;
+}
+@keyframes hue {
+    0% {
+      filter: hue-rotate(240deg);
+    }
+    100% {
+      filter: hue-rotate(300deg);
+    }
+  }
+  h1{
+    transition: 0.5s;
+  }
+  h1:hover{
+    animation: skew 2s linear infinite;
+    transform: scale(1.25);
+    cursor: pointer;
+  }
+  @keyframes skew{
+    0%,100%{
+      transform: skewX(10deg);
+    }
+    50%{
+      transform: skewX(-10deg);
+    }
+  }
+
+.wrapper{
+    position: relative;;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+li {
+    float: left;
+}
+a{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Kufam', cursive;
+}
+.button1{
+  border: none;
+  border-bottom-left-radius:50% ;
+  border-bottom-right-radius:50% ;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 50px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color:rgb(76, 127, 136);
+}
+.button1:hover {
+  background-image: -webkit-linear-gradient(92deg, #fdfdfd, #569ad1);
+  color:black;
+  transform: scale(1.25);
+}
+/*--------------------------------------Content Elements--------------------------------------------------------------*/
+/* The Alps by Hans Toquero.Copyright © 2020 */
+/* Credits to https://codepen.io/Christopherallen/pen/Clajw for the mountain idea */
+
+/*------------Piz Bernina------------*/
+.piz-bernina{
+
+}
+.mountain, .mountain-two, .mountain-three {
+  position: absolute;
+  bottom: 30%;
+  left: 8%;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 180px solid #7ac1e4;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+.mountain:hover,.mountain-two:hover,.mountain-three:hover{
+  transform: scale(1.25);
+}
+.mountain-two { 
+  left: 12%;
+  opacity: .3;
+  z-index: 0;
+}
+.mountain-three {
+  left: 3%;
+  opacity: .5;
+  z-index: 0;
+}
+.mountain-top {
+  position: absolute;
+  right: -65px;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 77px solid #ceeaf6;
+  z-index: 2;
+}
+.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+  position: absolute;
+  top: 70px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ceeaf6;
+}
+.mountain-cap-1 { left: -55px; }
+.mountain-cap-2 { left: -25px; }
+.mountain-cap-3 { left: 5px; }
+
+.cloud, .cloud:before, .cloud:after {
+position: absolute;
+width: 70px;
+height: 30px;
+background: #fff;
+-webkit-border-radius: 100px / 50px;
+border-radius: 100px / 50px;
+}
+.cloud { 
+bottom: 43%;
+        animation: cloud 40s infinite linear;
+}
+@keyframes cloud {
+ 
+  0%   { transform: translateX(-100px); opacity: 0.8;}
+  10%{opacity:1;}
+  100% {opacity:0;transform: translateX(1000px);} 
+}
+.cloud:before {
+content: '';
+left: 60px;
+}
+.cloud:after {
+content: '';
+left: 25px;
+top: -10px;
+}
+.m1{
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Fredoka One', cursive;
+  background-color: cornsilk;
+  border-color: none;
+  transition-property: all;
+  transition-timing-function:ease-out;
+  transition-duration: 1s;
+  left: 10%;
+  top: 70%;
+  z-index: 2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.m1:hover{
+  height: 270px;
+  transform: translateY(-30px);
+}
+
+/*-------------Weisshorn---------*/
+.weisshorn{
+}
+.mountain2{
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 180px solid #7ac1e4;
+  z-index: 0;
+  transition-duration: 0.5s;
+  opacity: 0.8;
+}
+.land{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid rgb(37, 107, 58);
+  border-right: 100px solid transparent;
+  border-width:130px 290px;
+  top: 56.2%;
+  left:40%;
+}
+.tree{
+    position: absolute;
+    left: 10px;
+    animation: sway 1s infinite alternate;
+}
+.tree1{
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  animation: sway 1s infinite alternate;
+}
+.tree2{
+  position: absolute;
+  top: 50px;
+  left: 170px;
+  animation: sway 1s infinite alternate;
+}
+.tree3{
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  animation: sway 1s infinite alternate;
+}
+.branch1{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #16850c;
+}
+.branch2{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #16850c;
+  }
+.branch3{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #16850c;
+  }
+  .mountain2:hover{
+    transform: scale(1.25);
+  }
+  @keyframes sway{
+    0%{transform: skewX(12deg);}
+    100%{transform: skewX(-12deg);}
+  }
+  .cloud2, .cloud2:before, .cloud2:after {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+    }
+    .cloud2{ 
+    bottom: 43%;
+            animation: cloud2 35s infinite linear;
+            z-index: 1;
+    }
+    @keyframes cloud2 {
+     
+      0%   { transform: translateX(500px);opacity: 0; }
+      10%{opacity:1;}
+      100% {transform: translateX(2000px);opacity: 0; } 
+    }
+    .cloud2:before {
+    content: '';
+    left: 50px;
+    }
+    .cloud2:after {
+    content: '';
+    left: 25px;
+    top: -10px;
+    }
+.m2{
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Fredoka One', cursive;
+  background-color: cornsilk;
+  border-color: none;
+  transition-property: all;
+  transition-timing-function:ease-out;
+  transition-duration: 1s;
+  left: 42.5%;
+  top: 70%;
+  z-index: 2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.m2:hover{
+  height: 270px;
+  transform: translateY(-30px);
+}
+
+  /*---------Matterhorn---------*/
+.matterhorn{
+}
+.mountain3{
+  position: absolute;
+  bottom: 38.5%;
+  left: 75%;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 120px solid #5f899e;
+  transform: scaleY(2.3);
+  z-index: 0;
+  opacity: 0.7;
+}
+.mountain-top-2{
+  position: absolute;
+  right: -38px;
+  border-left: 38px solid transparent;
+  border-right: 38px solid transparent;
+  border-bottom: 30px solid #ceeaf6;
+  z-index: 1;
+}
+.mountain-cap-1-2, .mountain-cap-2-2, .mountain-cap-3-2 {
+  position: absolute;
+  top: 30px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 10px solid #ceeaf6;
+}
+.mountain-cap-1-2 { left: -37.5px; }
+.mountain-cap-2-2 { left: -12px; }
+.mountain-cap-3-2 { left: 14px; }
+
+.mountain_small,.mountain_small-2,.mountain_small-3,.mountain_small-4{
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 120px solid #3e7591;
+    z-index: 1;
+    transition-duration: 0.25s;
+}
+.mountain_small{
+  right: 5%;
+}
+.mountain_small-2{
+  right: 18%;
+  border-bottom: 120px solid #325a6e;
+}
+.mountain_small-3{
+  right: 15%;
+  border-bottom: 100px solid #3e7591;
+}
+.mountain_small-4{
+  right: 10%;
+  border-bottom: 120px solid #325a6e;
+}
+.mountain_small:hover,.mountain_small-2:hover,.mountain_small-3:hover,.mountain_small-4:hover{
+  transform: scale(1.25);
+}
+
+.cloud3, .cloud3:before, .cloud3:after {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: #fff;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+  }
+  .cloud3{ 
+  bottom: 45%;
+          animation: cloud3 40s infinite linear;
+          z-index: 1;
+  }
+  @keyframes cloud3 {
+   
+    0%   { transform: translateX(900px);opacity: 0; }
+    10%{opacity:1;}
+    100% {transform: translateX(2000px);opacity: 0; } 
+  }
+  .cloud3:before {
+  content: '';
+  left: 80px;
+  }
+  .cloud3:after {
+  content: '';
+  left: 25px;
+  top: -18px;
+  }
+  .m3{
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Fredoka One', cursive;
+    background-color: cornsilk;
+    border-color: none;
+    transition-property: all;
+    transition-timing-function:ease-out;
+    transition-duration: 1s;
+    right: 11.2%;
+    top: 70%;
+    z-index: 2;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .m3:hover{
+    height: 280px;
+    transform: translateY(-30px);
+  }
+/*---------------------------------------------------------Footer-----------------------------------------------------------*/
+/* The Alps by Hans Toquero.Copyright © 2020 */
+.footer{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+.cont{
+  padding: 0%;
+  margin: 0%;
+  bottom: -5%;
+  left: -10%;
+  position: inherit;
+}
+.cont1{
+  padding: 0%;
+  margin: 0%;
+  bottom: -50%;
+  left: 5%;
+  position: inherit;
+}
+.cont2{
+  padding: 0%;
+  margin: 0%;
+  bottom: -30%;
+  left: 20%;
+  position: inherit;
+}
+.cont3{
+  padding: 0%;
+  margin: 0%;
+  bottom: -50%;
+  left: 35%;
+  position: inherit;
+}
+.cont4{
+  padding: 0%;
+  margin: 0%;
+  bottom: -5%;
+  left: 50%;
+  position: inherit;
+}
+.cont5{
+  padding: 0%;
+  margin: 0%;
+  bottom: -50%;
+  left: 65%;
+  position: inherit;
+}
+.cont6{
+  padding: 0%;
+  margin: 0%;
+  bottom: -50%;
+  left: 80%;
+  position: inherit;
+}
+.wave {
+  opacity: 1;
+  position: absolute;
+  background: rgb(157, 217, 247);
+  width: 500px;
+  height: 500px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: -1;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .4;
+  background: rgb(255, 255, 255);
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+/*-------------Icons : credits to original creators---------*/
+
+.facebook_cont{
+  position: absolute;
+  right: 45%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.facebook_cont:hover{
+  animation: shakeF 0.4s linear infinite;
+}
+@keyframes shakeF{
+  0%,100%{
+    transform:translateX(5px)scale(1.20);
+  }
+  50%{
+    transform:translateX(-5px)scale(1.20);
+  } 
+}
+
+.facebook-icon {
+  background: rgb(76, 127, 136);
+  text-indent: -700em;
+  width: 50px;
+  height: 60px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid rgb(76, 127, 136);
+  border-bottom: 0;
+}
+.facebook-icon:before {
+  content: "/20";
+  position: absolute;
+  background:rgb(76, 127, 136);
+  width: 15px;
+  height: 60px;
+  bottom: -25px;
+  right: -13px;
+  border: 10px solid #eee;
+  border-radius: 25px;
+  box-sizing: content-box;
+}
+.facebook-icon:after {
+  content: "/20";
+  position: absolute;
+  width: 30px;
+  top: 30px;
+  height: 10px;
+  background: #eee;
+  right: 2px;
+  box-sizing: content-box;
+}
+.insta{
+  
+}
+.container{
+  background: rgb(76, 127, 136);
+  position: absolute;
+  top: 16%;
+  right: 35%;
+  width: 80px;
+  height: 80px;
+  border-radius: 25%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.container:hover{
+  animation: shakeI 0.4s infinite linear;
+}
+@keyframes shakeI{
+  0%,100%{
+    transform:translateX(5px)scale(1.20);
+  }
+  50%{
+    transform:translateX(-5px)scale(1.20);
+  } 
+}
+
+.shape{
+  transform: translate(13%, 13%);
+  width: 63px;
+  height: 63px;
+  border-radius: 25%;
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+}
+
+.shape::before{
+  content: '';
+  position: absolute;
+  background-color: rgba(255,255,255,1);
+  margin-top: 8px;
+  margin-left: 45px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.shape::after{
+  position: absolute;
+  content: '';
+  margin-top: 18px;
+  margin-left: 17px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+}
+.youtube{
+  
+}
+.logo {
+  right: 19%;
+  bottom: 83%;
+  position : absolute;
+  transform: scale(0.45);
+  transition-duration:0.4s ;
+  cursor: pointer;
+}
+.logo:hover{
+  animation: shakeY 0.4s linear infinite;
+}
+@keyframes shakeY{
+  0%,100%{
+    transform:translateX(5px)scale(0.50);
+  }
+  50%{
+    transform:translateX(-5px)scale(0.50);
+  } 
+}
+.red {
+  height : 170px;
+  width : 241px;
+  position : absolute;
+  background-color : rgb(76, 127, 136);
+  border-top-left-radius : 50% 11%;
+  border-top-right-radius : 50% 11%;
+  border-bottom-left-radius : 50% 11%;
+  border-bottom-right-radius : 50% 11%;
+  
+}    
+
+.red:before {
+  content : '';
+  position : absolute;
+  border-radius : 5% / 42%;    
+  top : 15px;
+  left : -10px;
+  width : 261px;
+  height : 140px;
+  background-color : rgb(76, 127, 136);
+  background-image : linear-gradient(bottom, black, red);
+}
+
+.play {
+  top : 22px;
+  left : 95px;
+  position : absolute;
+  border-width : 65px;
+  border-style : solid;
+  border-color : transparent #F7F7F7 transparent transparent;
+  transform : rotate(180deg) rotateX(-60deg);
+  
+}
+.twt{
+ transform: scale(0.25);
+ position: absolute;
+ right: 30%;
+ bottom: 85%;
+ transition-duration: 0.5s;
+ cursor: pointer;
+}
+.twt:hover{
+  animation: shaket 0.4s linear infinite;
+}
+@keyframes shaket{
+  0%,100%{
+    transform:translateX(5px)scale(0.28);
+  }
+  50%{
+    transform:translateX(-5px)scale(0.28);
+  } 
+}
+.logo-container {
+  background: white;
+  height: 325px;
+  position: absolute;
+  width: 400px;
+  border-radius: 25%;
+}
+
+.sar {
+  background:rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 129px;
+  height: 110px;
+  left: 179px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-25deg);
+  width: 110px;
+  z-index: 16;
+}
+
+.gardan {
+  background:rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 90px;
+  height: 180px;
+  left: 217px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(8deg);
+  width: 105px;
+  z-index: 10;
+}
+
+.par1 {
+  background: rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 180px;
+  height: 120px;
+  left: 100px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(25deg);
+  width: 150px;
+  z-index: 7;
+}
+
+.par1-overlay {
+  background: #fff;
+  border-radius: 50%;
+  bottom: 230px;
+  height: 80px;
+  left: 70px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(15deg);
+  width: 200px;
+  z-index: 8;
+}
+
+.par2 {
+  background: rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 140px;
+  height: 100px;
+  left: 80px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(15deg);
+  width: 150px;
+  z-index: 5;
+}
+
+.par2-overlay {
+  background: #fff;
+  border-radius: 50%;
+  bottom: 180px;
+  height: 50px;
+  left: 50px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(5deg);
+  width: 75px;
+  z-index: 6;
+}
+
+.par3 {
+  background: rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 80px;
+  height: 100px;
+  left: 70px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-15deg);
+  width: 100px;
+  z-index: 3;
+}
+
+.par3-overlay {
+  background: #fff;
+  border-radius: 50%;
+  bottom: 130px;
+  height: 50px;
+  left: 45px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(0deg);
+  width: 90px;
+  z-index: 4;
+}
+
+.par4 {
+  background: rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: -10px;
+  height: 180px;
+  left: 15px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-20deg);
+  width: 270px;
+  z-index: 1;
+}
+
+.par4-overlay {
+  background: #fff;
+  border-radius: 50%;
+  height: 85px;
+  left: -10px;
+  position: absolute;
+  bottom: 40px;
+  transform-origin: 0 0;
+  transform: rotate(-18deg);
+  width: 150px;
+  z-index: 2;
+}
+
+.nok-top {
+  background:rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 195px;
+  height: 50px;
+  left: 240px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-35deg);
+  width: 85px;
+  z-index: 14;
+}
+
+.nok-top-overlay { 
+  background: #fff;
+  border-radius: 50%;
+  bottom: 230px;
+  height: 50px;
+  left: 240px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-20deg);
+  width: 110px;
+  z-index: 15;
+}
+
+.nok-bottom {
+  background: rgb(76, 127, 136);
+  border-radius: 50%;
+  bottom: 167px;
+  height: 50px;
+  left: 225px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-35deg);
+  width: 125px;
+  z-index: 12;
+}
+
+.nok-bottom-overlay { 
+  background: #fff;
+  border-radius: 50%;
+  bottom: 218px;
+  height: 50px;
+  left: 250px;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-15deg);
+  width: 110px;
+  z-index: 13;
+}
+.footer_txt{
+  z-index: 3;
+  width: auto;
+  height: auto;
+  font-family: 'Kufam';
+  font-weight: bold;
+}
+.footer_txt_2{
+  z-index: 3;
+  width: auto;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+}
+.footer_txt_4{
+  z-index: 3;
+  width: auto;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  bottom: 2%;
+  position: absolute;
+}
+.footer_txt_3{
+  z-index: 3;
+  width: auto;
+  height: auto;
+  font-family: 'Carter One', cursive;
+  font-weight: bold;
+  position: absolute;
+  left: 38%;
+  font-size: 34px;
+  top: 5%;
+  color: rgb(76, 127, 136);
+}
+/*---------------------------------------------------------Ambient bG-------------------------------------------------------*/
+
+.snowflake{
+    position: absolute;
+    color: #fff;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+}
+.snowflake div:nth-child(1){
+    position: fixed;
+    margin-top: 12%;
+    margin-left: 42%;
+    animation:animate 10s linear infinite;
+}
+.snowflake div:nth-child(2){
+    position: fixed;
+    margin-top: 70%;
+    margin-left: 50%;
+    animation:animate 10s linear infinite;
+}
+.snowflake div:nth-child(3){
+    position: fixed;
+    margin-top: 17%;
+    margin-left: 6%;
+    animation:animate 13s linear infinite;
+}
+.snowflake div:nth-child(4){
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 60%;
+    animation:animate 15s linear infinite;
+}
+.snowflake div:nth-child(5){
+    position: fixed;
+    margin-top: 67%;
+    margin-left: 10%;
+    animation:animate 9s linear infinite;
+}
+.snowflake div:nth-child(6){
+    position: fixed;
+    margin-top: 80%;
+    margin-left: 70%;
+    animation:animate 12s linear infinite;
+}
+.snowflake div:nth-child(7){
+    position: fixed;
+    margin-top: 60%;
+    margin-left: 80%;
+    animation:animate 15s linear infinite;
+}
+.snowflake div:nth-child(8){
+    position: fixed;
+    margin-top: 32%;
+    margin-left: 25%;
+    animation:animate 16s linear infinite;
+}
+.snowflake div:nth-child(9){
+    position: fixed;
+    margin-top: 90%;
+    margin-left: 25%;
+    animation:animate 13s linear infinite;
+}
+.snowflake div:nth-child(10){
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 80%;
+    animation:animate 11s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform:scale(0) translateY(-500px) rotate(0);
+        opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(350px) rotate(360deg);
+        opacity: 0;
+    }
+}
+/* The Alps by Hans Toquero.Copyright © 2020 */
