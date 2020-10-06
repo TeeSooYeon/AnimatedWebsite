@@ -11,9 +11,7 @@
     <body id="head">
         <ul>
             <li><a class="button1" href="#head">Home</a></li>
-            <li><a class="button1" href="#gallery">Gallery</a></li>
             <li style="float:right"><a class="button1" href="#footer">Contact Us</a></li>
-            <li style="float:right"><a class="button1" href="#about">More</a></li>
             <div class="alps_logo">
                 <div class="snow">
                     <div class="flake1"></div>
